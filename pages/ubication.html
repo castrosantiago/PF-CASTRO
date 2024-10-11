@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi ubicacion</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="about.html">Historia</a></li>
-                <li><a href="ubication.html">Ubicacion</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-            </ul>
-        </nav>
+
+        <header class="d-flex justify-content-center align-items-center">
+            <a class="navbar-brand justify-content-center" href="#">
+                <img src="../images/file.png" alt="Logo" width="100"  class="img-fluid">
+          
+          
+            </a>
+        </header>
+
+    
+        <header class="bg-blue text-yellow py-1 justify-content-center">
+          <div class="container ">
+    
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler " type="boton" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto  ">
+                            <li class="nav-item "><a class="nav-link text-light" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./about.html">Historia</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./ubication.html">Ubicacion</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="./gallery.html">Galería</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <h2>UBICACION</h2>
+        <h1>UBICACION</h1>
         <p>Ubicada en la ex Casa Amarilla, sobre Martín Rodríguez y 20 de septiembre, la cancha cuenta con césped sintético y se construyó en la manzana más amplia de las dos que Boca compró desde hace dos años, a unos 400 metros del estadio Alberto J Armando</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8443631479327!2d-58.366675952196054!3d-34.63337314749681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3358af9483efd%3A0x50aba6f2444dc98!2sCancha%20de%20Hockey%20del%20Club%20Atl%C3%A9tico%20Boca%20Juniors!5e0!3m2!1ses!2sar!4v1727212721535!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
-    <footer>
-        <p> © Copyright 2024 Boca Juniors
+        <div class=" mt-4 ratio ratio-16x9 map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8443631479327!2d-58.366675952196054!3d-34.63337314749681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3358af9483efd%3A0x50aba6f2444dc98!2sCancha%20de%20Hockey%20del%20Club%20Atl%C3%A9tico%20Boca%20Juniors!5e0!3m2!1ses!2sar!4v1727212721535!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </p>
+        </div>
+        
+    </main>
+    <footer class="bg-blue text-yellow py-3">
+        <div class="container text-center">
+            <p> &copy; Copyright 2024 Boca Juniors </p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

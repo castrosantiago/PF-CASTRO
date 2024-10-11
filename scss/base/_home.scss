@@ -5,27 +5,18 @@
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
 
-body{
-  header{
-    nav{
-      div{
-        a{
-          img{
-            transform: translate(-20px, -30px);
-          }
-          
-        }
-      }
-    }
-  }
-}
+
 
 body{
 
-    font-family: Arial, sans-serif;
+    font-family: "Bebas Neue";
     margin: 0;
     padding: 0;
     background-image: $imagen-principal;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: auto;
     color: $color-texto; /* Texto blanco */
     display: flex;
     flex-direction: column;
@@ -33,7 +24,7 @@ body{
 
 }
 header{
-    font-family: "Bebas Neue", cursive;
+    font-family: "Bebas Neue";
     background-color: $Color-principal;
     color: $color-secundario;
     padding: 10px 0;
@@ -54,9 +45,11 @@ header{
 nav{
     ul{
         li{
-            margin: 0 10px;
+            margin: 0 10px;     
+                  
             
             a{
+              
                 color: $color-texto;
                 text-decoration: none;
                 padding: 10px 20px; 
@@ -82,7 +75,7 @@ main{
     align-items: center;
     text-align: center;
     h1{
-        color: $color-negro;
+        color: $color-texto;
     }
     section{
       display: flex;
@@ -118,59 +111,10 @@ img{
     max-width: 100%;
     height: auto;
 }
-
-
-@include responsive(600px, 1024px) {
-    header {
-      padding: 25px 0;
-    }
-  
-    main img {
-      width: 400px;
-    }
-  
-    nav ul li {
-      margin: 0 15px;
-    }
-  
-    main {
-      padding: 20px;
-      font-size: 1.2rem;
-    }
-  
-    footer {
-      font-size: 1rem;
-      padding: 15px 0;
-    }
-  }
-  
-  @include responsive(1025px) {
-    header {
-        height: 70px;
-        text-align: center;
-        padding: 1rem 0;
-    }
-  
-    nav ul li {
-      margin: 0 20px;
-    }
-  
-    main {
-      padding: 20px;
-      font-size: 1.4rem;
-    }
-  
-    footer {
-      padding: 20px 0;
-      font-size: 1.1rem;
-    }
-  }
   
   @include responsive(0, 599px) {
     header {
       padding: 30px 0;
-      
-
     }
   
     main {
@@ -208,6 +152,72 @@ img{
     footer {
       font-size: 0.9rem;
       padding: 10px 0;
+    }
+  }
+
+  @include responsive(600px, 1024px) {
+    header {
+      padding: 50px 0;
+      margin: 0;
+    }
+  
+    main img {
+      width: 400px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 20px;
+      font-size: 1.2rem;
+    }
+  
+    footer {
+      font-size: 1rem;
+      padding: 15px 0;
+    }
+  }
+
+
+  @include responsive(1025px) {
+    header {
+        height: 70px;
+        text-align: center;
+        padding: 1rem 0;
+        nav{
+          div{
+            a{
+              img{
+
+                
+              }
+            }
+          }
+        }
+    }
+    main{
+      div{
+        iframe{
+          max-height: 600px;
+          
+        }
+      }
+    }
+  
+    nav ul li {
+      margin: 0 20px;
+    }
+  
+    main {
+      padding: 20px;
+      font-size: 1.4rem;
+    }
+  
+    footer {
+      padding: 20px 0;
+      font-size: 1.1rem;
     }
   }
 
